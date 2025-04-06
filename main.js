@@ -19,13 +19,13 @@ if(playGame){
 
                         let result=player==computer? "Tie game"
                         
-                        :player==="rock" && computer=="paper" ? "Computer Win"
+                        :player==="rock" && computer=="paper" ? `Player:${player}\nComputer:${computer}/n Computer Win !`
 
-                        :player==="paper" && computer==="scissor"? "Computer Win"
+                        :player==="paper" && computer==="scissor"? `Player:${player}\nComputer:${computer}/n Computer Win !`
 
-                        :player==="scissor" && computer==="rock"? "Computer Win"
+                        :player==="scissor" && computer==="rock"? `Player:${player}\nComputer:${computer}/n Computer Win !`
 
-                        :"Player Win";
+                        :`Player:${player}\nComputer:${computer}/n Player Win !`;
 
                         alert(result);
                         let playAgain=confirm("Play Again");
