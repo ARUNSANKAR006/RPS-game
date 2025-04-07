@@ -11,11 +11,12 @@ if(playGame){
                 player=== "paper" ||
                 player === "scissor") {
 
-                        let computerChoice=Math.floor(Math.random()*3+1);
+                        const computerChoice=Math.floor(Math.random()*3+1);
 
-                        let computer=computerChoice===1? "rock"
-                        :computerChoice===2? "paper"
-                        :"scissor";
+                        const rpsArray=["rock","paper","scissor"];
+                        const computer=rpsArray[computerChoice];
+
+                        
 
                         let result=player==computer? "Tie game"
                         
